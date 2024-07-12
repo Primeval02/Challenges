@@ -7,6 +7,7 @@
 using namespace std;
 
 void checkSum(int target, int * nums, int size) {
+	//loop through array for each element in aray to check if they equal sum; inefficient
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
 			int sum = nums[i] + nums[j];
@@ -26,6 +27,7 @@ int main() {
 	int size = sizeof(nums) / sizeof(nums[0]);
 	int target;
 
+	//printing statements
 	cout << "Enter a target sum: ";
 	cin >> target;
 	cout << "\nNumbers array: {";  
@@ -37,7 +39,7 @@ int main() {
 	}
 	cout << "}" << endl;
 
-	checkSum(target, nums, size);
+	checkSum(target, nums, size);	//function call
 	return 0;
 
 

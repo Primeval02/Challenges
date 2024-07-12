@@ -1,0 +1,5 @@
+TwoSum
+-------------------
+Finds the first two integers in an array that sums to the user provided target.
+
+twoSum.cpp: A brute force approach to the problem with an inefficient O(n^2)
